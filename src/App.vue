@@ -1,24 +1,33 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import ContactInfo from './components/ContactInfo.vue'
+import StackView from './components/StackView.vue'
+import EducationView from './components/EducationView.vue'
+import SummaryView from './components/SummaryView.vue'
+import ExperienceView from './components/ExperienceView.vue'
+import SkillsView from './components/SkillsView.vue'
+import CertificationView from './components/CertificationView.vue'
+import HobbiesView from './components/HobbiesView.vue'
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <main class="">
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+      <ContactInfo />
+      <StackView />
+      <EducationView />
+      <SummaryView />
+      <ExperienceView />
+      <SkillsView />
+      <CertificationView />
+      <HobbiesView />
       
-    </div>
-  </header>
 
-  <RouterView />
+
+    </div>
+  </main>
+
 </template>
 
 <style scoped>
